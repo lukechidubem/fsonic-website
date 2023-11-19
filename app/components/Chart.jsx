@@ -26,11 +26,10 @@ const Chart = () => {
           <div>
             <div className="xl:w-[704px] lg:h-[452px] w-[100%] h-[420px] bg-neutral-700 mt-10 rounded-lg">
               <iframe
-                src="https://dexscreener.com/fantom/0x767520fa98e1e24b3326fd42b24c9dcfce8bce14"
+                src="https://dexscreener.com/fantom/0x767520fa98e1e24b3326fd42b24c9dcfce8bce14?embed=1&trades=0&info=1&theme=dark"
                 title="External Content"
                 width="100%"
                 height="100%"
-                frameBorder="0"
                 className="rounded-lg"
               />
             </div>

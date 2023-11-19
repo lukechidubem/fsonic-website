@@ -12,9 +12,7 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-import FaqBg from "../../public/F-fDwFdW4AAn-nd-transformed.png";
-
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import FaqBg from "../../public/F--qNUsbcAA3_46-transformed.png";
 
 export default function FAQ() {
   return (
@@ -24,7 +22,15 @@ export default function FAQ() {
       justify={"center"}
       className="font-['Satoshi']"
     >
-      <div>
+      <div
+        style={{
+          backgroundImage: `url(${FaqBg.src})`,
+          // backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+        className=" lg:min-w-[900px]"
+      >
         <Text textAlign={"center"} p={3} fontSize="xl">
           FAQs
         </Text>

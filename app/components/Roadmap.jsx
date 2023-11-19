@@ -17,42 +17,42 @@ const Roadmap = () => {
       </div>
 
       <div className="flex items-center justify-end mt-12 flex-wrap">
-        <div className="flex items-center md:gap-10 gap-3 my-7">
+        <div className="flex items-center md:gap-10 gap-3 my-3 xl:my-7">
           <Image src={Ball} alt="Roamap Item" />
           <div className="md:w-[450px] w-[250px] text-black text-xl font-normal font-['Satoshi'] md:leading-[23px]">
             1) Launch on 24.10
           </div>
         </div>
 
-        <div className="flex items-center md:gap-10 gap-3 my-7">
+        <div className="flex items-center md:gap-10 gap-3 my-3 xl:my-7">
           <Image src={Ball} alt="Roamap Item" />
           <div className="md:w-[450px] w-[250px] text-black text-xl font-normal font-['Satoshi'] leading-[23px]">
             2) Equal Gauge | deep liquidity
           </div>
         </div>
 
-        <div className="flex items-center md:gap-10 gap-3 my-7">
+        <div className="flex items-center md:gap-10 gap-3 my-3 xl:my-7">
           <Image src={Ball} alt="Roamap Item" />
           <div className="md:w-[450px] w-[250px] text-black text-xl font-normal font-['Satoshi'] leading-[23px]">
             3) Website
           </div>
         </div>
 
-        <div className="flex items-center md:gap-10 gap-3 my-7">
+        <div className="flex items-center md:gap-10 gap-3 my-3 xl:my-7">
           <Image src={Ball} alt="Roamap Item" />
           <div className="md:w-[450px] w-[250px] text-black text-xl font-normal font-['Satoshi'] leading-[23px]">
             4) NFT dApp | NFT collections
           </div>
         </div>
 
-        <div className="flex items-center md:gap-10 gap-3 my-7">
+        <div className="flex items-center md:gap-10 gap-3 my-3 xl:my-7">
           <Image src={Ball} alt="Roamap Item" />
           <div className="md:w-[450px] w-[250px] text-black text-xl font-normal font-['Satoshi'] leading-[23px]">
             5) Arcade Game
           </div>
         </div>
 
-        <div className="flex items-center md:gap-10 gap-3 my-7">
+        <div className="flex items-center md:gap-10 gap-3 my-3 xl:my-7">
           <Image src={Ball} alt="Roamap Item" />
           <div className="md:w-[450px] w-[250px] text-black text-xl font-normal font-['Satoshi'] leading-[23px]">
             6) KekBook

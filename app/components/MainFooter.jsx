@@ -29,7 +29,7 @@ const Logo = (props) => {
       cursor={"pointer"}
       minW={0}
     >
-      <p className="flex items-center text-[#fff] font-['Satoshi'] text-[32px]">
+      <p className="flex items-center text-[#fff] font-['Satoshi'] text-[32px] z-10">
         F{" "}
         <span className="">
           <Image src={LogoIcon} alt="Logo" height={30} width={30} />
@@ -65,10 +65,7 @@ const SocialButton = ({ children, label, href }) => {
 
 export default function MainFooter() {
   return (
-    <Box
-      color={"white"}
-      //   style={{ background: "linear-gradient(190deg,#5353fb 10%, #f5efce 90%)" }}
-    >
+    <Box color={"white"}>
       <Container
         as={Stack}
         maxW={"6xl"}
@@ -79,9 +76,9 @@ export default function MainFooter() {
       >
         <Logo />
         <Stack spacing={6}>
-          <Text maxW={"450px"} textAlign={"center"}>
-            FSONIC is a crypto meme coin on fantom network Dapp has been
-            designed and created by MoonShadow X : @MoonshadowXs06
+          <Text maxW={"450px"} textAlign={"center"} className="z-10">
+            FSONIC is a crypto meme coin on fantom network. Dapp has been
+            designed and created by Luke X : @lukechidubem
           </Text>
         </Stack>
       </Container>
@@ -100,8 +97,8 @@ export default function MainFooter() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text textAlign={"center"}>
-            © 2023 FSONIC. All Rights Reserved. contact@fsonic.tech
+          <Text textAlign={"center"} className="z-10">
+            © 2023 FSONIC. All Rights Reserved. contact@fsonic.world
           </Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton label={"Twitter"} href={"#"}>
