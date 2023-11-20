@@ -70,8 +70,8 @@ export default function MainFooter() {
       >
         <Logo />
         <Stack spacing={6}>
-          <Text maxW={"450px"} textAlign={"center"} className="z-10">
-            FSONIC is a crypto meme coin on Fantom network.
+          <Text maxW={"80vw"} textAlign={"center"} className="z-10">
+            FSONIC is a crypto meme coin with utility on Fantom network.
             <span className="text-[12px] block">
               Created and designed by{" "}
               <a
@@ -79,8 +79,15 @@ export default function MainFooter() {
                 target="_blank"
                 className="text-yellow-300"
               >
-                LukeChidubem X
+                Lukechidubem
               </a>{" "}
+              <a
+                href="https://twitter.com/FantomSonicX"
+                target="_blank"
+                className="text-yellow-300"
+              >
+                & Moonshadow
+              </a>
             </span>
           </Text>
         </Stack>
@@ -103,16 +110,28 @@ export default function MainFooter() {
           <Text textAlign={"center"} className="z-10">
             © 2023 FSONIC. All Rights Reserved. contact@fsonic.world
           </Text>
-          <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
+          <Stack direction="row" spacing={6}>
+            <a
+              href="https://twitter.com/fantomsonicinu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter className="text-2xl" />
-            </SocialButton>
-            <SocialButton label={"Discord"} href={"#"}>
+            </a>
+            <a
+              href="https://discord.gg/a7UrGX4c"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaDiscord className="text-2xl" />
-            </SocialButton>
-            <SocialButton label={"Telegram"} href={"#"}>
+            </a>
+            <a
+              href="https://t.me/fantomsonic00"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTelegram className="text-2xl" />
-            </SocialButton>
+            </a>
           </Stack>
         </Container>
       </Box>

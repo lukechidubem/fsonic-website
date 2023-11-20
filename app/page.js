@@ -9,7 +9,7 @@ import AlmostYours from "./components/AlmostYours";
 import Chart from "./components/Chart";
 import Roadmap from "./components/Roadmap";
 import Footer from "./components/Footer";
-
+import Head from "next/head";
 export default function Home() {
   const [domLoaded, setDomLoaded] = useState(false);
 
@@ -20,7 +20,9 @@ export default function Home() {
   }, []);
 
   return !domLoaded ? (
+    
     <section className="h-screen w-screen flex justify-center items-center">
+        
       <Spinner
         thickness="4px"
         speed="0.65s"

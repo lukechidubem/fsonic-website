@@ -73,7 +73,7 @@ const Hero = () => {
           style={{ boxShadow: "12px 13px 0px -3px rgba(0,0,0,0.91)" }}
           className="w-[262px] h-[55px] bg-[#5455FF] text-center text-neutral-100 text-[32px] font-bold font-['Satoshi'] leading-relaxed"
         >
-          <a href="h">BUY NOW</a>
+          <a href="https://app.firebird.finance/swap" target="_blank" >BUY NOW</a>
         </button>
       </div>
     </div>

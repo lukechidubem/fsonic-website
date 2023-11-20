@@ -1,5 +1,5 @@
 import React from "react";
-import Spooky from "../../public/spooky.png";
+import Spooky from "../../public/addicted.png";
 import Logo from "../../public/smallRING.png";
 import Image from "next/image";
 
@@ -22,23 +22,23 @@ const AlmostYours = () => {
             className="md:w-[429px] h-[304px] w-[95%]"
             style={{
               backgroundImage: `url(${Spooky.src})`,
-              backgroundSize: "cover",
+              backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
-              boxShadow: "21px 19px 0px -1px rgba(0,0,0,0.91)",
+              boxShadow: "1px 9px 0px -1px rgba(0,0,0,0.1)",
             }}
           ></div>
 
           <div className="flex items-center gap-6 my-10">
-            <div className="w-[17px] h-[17px] rounded-full border-2 border-indigo-500"></div>
+            <div className="w-[17px] h-[17px] rounded-full border-2 border-red-500"></div>
 
             <div className="">
-              <span className="text-indigo-500 md:text-2xl text-xl font-bold font-['Satoshi'] md:leading-[28.80px] tracking-wider">
-                WARNING:
-              </span>
+        <span className="text-red-500 text-indigo-500 md:text-2xl text-xl font-bold font-['Satoshi'] md:leading-[28.80px] tracking-wider">
+  WARNING:
+</span>
               <span className="text-indigo-500 text-xl md:text-2xl font-normal font-['Satoshi'] md:leading-[28.80px] tracking-wider">
                 {" "}
-                You’ll can be addicted
+                Addicted to the Game !
               </span>
             </div>
           </div>
@@ -66,7 +66,7 @@ const AlmostYours = () => {
               style={{ boxShadow: "12px 13px 0px -3px rgba(0,0,0,0.91)" }}
               className="w-[262px] h-[55px] bg-[#5455FF] text-center text-neutral-100 text-[32px] font-bold font-['Satoshi'] leading-relaxed"
             >
-              <a href="h">BUY NOW</a>
+              <a href="https://app.firebird.finance/swap" target="_blank" >BUY NOW</a>
             </button>
           </div>
         </div>

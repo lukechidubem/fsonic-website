@@ -37,7 +37,7 @@ const Chart = () => {
               <div className="w-[17px] h-[17px] rounded-full border-2 border-indigo-500"></div>
 
               <div className=" text-indigo-500 text-2xl font-normal font-['Satoshi'] leading-[28.80px] tracking-widest">
-                always keep an eye on the chart
+                Keep your eyes on the prize !
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@ const Chart = () => {
                 className="bg-amber-100 p-2 font-['Satoshi'] text-2xl min-w-[80%] text-center"
                 style={{ boxShadow: "6px 7px 5px 0px rgba(0,0,0,0.75)" }}
               >
-                Liquidity <span className="text-indigo-800 ml-5 ">50%</span>
+                Liquidity <span className="text-indigo-800 ml-5 ">30%</span>
               </p>
             </div>
             <div
@@ -79,8 +79,8 @@ const Chart = () => {
                 className="bg-amber-100 p-2 font-['Satoshi'] text-2xl min-w-[80%] text-center"
                 style={{ boxShadow: "-6px -7px 5px 0px rgba(0,0,0,0.75)" }}
               >
-                Staking Rewards
-                <span className="text-indigo-800 ml-5">25%</span>
+                NFT dapp
+                <span className="text-indigo-800 ml-5">15%</span>
               </p>
             </div>
           </div>
@@ -109,7 +109,7 @@ const Chart = () => {
                 className="bg-amber-100 p-2 font-['Satoshi'] text-2xl min-w-[80%] text-center"
                 style={{ boxShadow: "-6px -7px 5px 0px rgba(0,0,0,0.75)" }}
               >
-                Project Alpha <span className="text-indigo-800 ml-5">5%</span>
+                Arcade game <span className="text-indigo-800 ml-5">15%</span>
               </p>
             </div>
           </div>
@@ -125,7 +125,7 @@ const Chart = () => {
                 className="bg-amber-100 p-2 font-['Satoshi'] text-2xl min-w-[80%] text-center"
                 style={{ boxShadow: "6px 7px 5px 0px rgba(0,0,0,0.75)" }}
               >
-                Team <span className="text-indigo-800 ml-5">5%</span>
+                Team <span className="text-indigo-800 ml-5">15%</span>
               </p>
             </div>
             <div
@@ -138,7 +138,7 @@ const Chart = () => {
                 className="bg-amber-100 p-2 font-['Satoshi'] text-2xl min-w-[80%] text-center"
                 style={{ boxShadow: "-6px -7px 5px 0px rgba(0,0,0,0.75)" }}
               >
-                Airdrop <span className="text-indigo-800 ml-5">5%</span>
+                Kekbook <span className="text-indigo-800 ml-5">15%</span>
               </p>
             </div>
           </div>

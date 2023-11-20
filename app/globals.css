@@ -16,6 +16,7 @@
   }
 }
 
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -25,3 +26,24 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+@media only screen and (max-width: 1068px) {
+  /* For mobile phones: */
+  .ringStyle {
+    width: 100dvw !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .ringStyle {
+    height: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 458px) {
+  /* For mobile phones: */
+  .ringStyle2 {
+    padding-top: 50px !important;
+  }
+}

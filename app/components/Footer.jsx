@@ -14,12 +14,9 @@ const Footer = () => {
       }}
     >
       <div
-        style={{
-          backgroundImage: `url(${FaqBg2.src})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
+        
+         
+      
         className="absolute  h-40 w-40  md:w-64 md:h-64"
       ></div>
 
@@ -30,7 +27,7 @@ const Footer = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
-        className="absolute md:bottom-0 bottom-44 right-0 h-40 w-40  md:w-64 md:h-64"
+        className="absolute md:bottom-12 bottom-44 right-0 h-40 w-40  md:w-64 md:h-64"
       ></div>
       <FAQ />
       <MainFooter />

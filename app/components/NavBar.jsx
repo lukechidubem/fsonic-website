@@ -99,7 +99,7 @@ export default function NavBar() {
           {/* </HStack> */}
           <Flex alignItems={"center"}>
             <a
-              href="#"
+              href="https://app.firebird.finance/swap" target="_blank"
               className=" text-center text-[#5353FB] hover:text-white hover:bg-[#5353FB] rounded px-2 bg-white text-[18px] md:text-[25px] xl:text-[32px] font-bold font-['Satoshi'] lg:leading-relaxed"
             >
               BUY NOW

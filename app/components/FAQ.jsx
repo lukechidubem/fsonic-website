@@ -18,6 +18,7 @@ export default function FAQ() {
   return (
     <Flex
       minH={"60vh"}
+      minW={"90vw"}
       align={"center"}
       justify={"center"}
       className="font-['Satoshi']"
@@ -34,7 +35,7 @@ export default function FAQ() {
         <Text textAlign={"center"} p={3} fontSize="xl">
           FAQs
         </Text>
-        <Accordion allowToggle>
+        <Accordion minW={"80vw"} allowToggle>
           <AccordionItem>
             <h2>
               <AccordionButton>
@@ -47,6 +48,7 @@ export default function FAQ() {
             <AccordionPanel pb={4} color={"#434343"}>
               FSONIC is a crypto meme coin for entertainment purposes on Fantom
               network.
+              For the time being users can use $fsonic to buy NFTs & participate in some Defi plays , in the future $fsonic can be used as currency for FsonicArcade : Game & Kekbook : Sofi.
             </AccordionPanel>
           </AccordionItem>
 
@@ -60,7 +62,7 @@ export default function FAQ() {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4} color={"#434343"}>
-              You can buy FSONIC on Firebird or on Equal using $ftm , more dexes
+              You can buy FSONIC on Firebird or on Equalizer , more dexes
               and possibly Cexes in the near future.
             </AccordionPanel>
           </AccordionItem>
@@ -75,7 +77,7 @@ export default function FAQ() {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4} color={"#434343"}>
-              liquidity is locked forever , fair launch and amazing roadmap.
+              Fsonic is the very first meme that is tryng to create an AIO NFT , Gamefi , Defi and Sofi on fantom network !
             </AccordionPanel>
           </AccordionItem>
 
@@ -89,7 +91,7 @@ export default function FAQ() {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4} color={"#434343"}>
-              Contact us on X : @fantomsonicinu
+              Contact us  : contact@fsonic.world
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
