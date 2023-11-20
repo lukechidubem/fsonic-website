@@ -9,13 +9,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import {
-  FaDiscord,
-  FaInstagram,
-  FaTelegram,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaDiscord, FaTelegram, FaTwitter } from "react-icons/fa";
 import { ReactNode } from "react";
 import LogoIcon from "../../public/smallRING.png";
 import Image from "next/image";
@@ -77,8 +71,17 @@ export default function MainFooter() {
         <Logo />
         <Stack spacing={6}>
           <Text maxW={"450px"} textAlign={"center"} className="z-10">
-            FSONIC is a crypto meme coin on fantom network. Dapp has been
-            designed and created by Luke X : @lukechidubem
+            FSONIC is a crypto meme coin on Fantom network.
+            <span className="text-[12px] block">
+              Created and designed by{" "}
+              <a
+                href="https://twitter.com/lukechidubem"
+                target="_blank"
+                className="text-yellow-300"
+              >
+                LukeChidubem X
+              </a>{" "}
+            </span>
           </Text>
         </Stack>
       </Container>
@@ -102,13 +105,13 @@ export default function MainFooter() {
           </Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton label={"Twitter"} href={"#"}>
-              <FaTwitter />
+              <FaTwitter className="text-2xl" />
             </SocialButton>
             <SocialButton label={"Discord"} href={"#"}>
-              <FaDiscord />
+              <FaDiscord className="text-2xl" />
             </SocialButton>
             <SocialButton label={"Telegram"} href={"#"}>
-              <FaTelegram />
+              <FaTelegram className="text-2xl" />
             </SocialButton>
           </Stack>
         </Container>
