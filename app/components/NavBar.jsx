@@ -8,8 +8,12 @@ import {
   Button,
   useDisclosure,
   Stack,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
 import Logo from "../../public/smallRING.png";
 import Image from "next/image";
 import { Link } from "react-scroll";
@@ -58,13 +62,13 @@ export default function NavBar() {
           h={16}
           alignItems={"center"}
           justifyContent={"space-between"}
-          className="lg:px-10"
+          className=" 2xl:px-10"
         >
           <IconButton
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
-            display={{ md: "none" }}
+            display={{ lg: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
           <Box
@@ -84,23 +88,77 @@ export default function NavBar() {
           </Box>
           <HStack
             as={"nav"}
-            spacing={{ base: 3, md: 4 }}
-            display={{ base: "none", md: "flex" }}
+            spacing={{ base: 3, xl: 4 }}
+            display={{ base: "none", lg: "flex" }}
           >
             {Links.map((link) => (
               <Box
                 key={link}
-                className="text-white lg:text-xl xl:text-2xl  text-sm font-light font-['Literata Variable'] lg:leading-tight"
+                className="text-white lg:text-lg xl:text-xl 2xl:text-2xl  text-sm font-light font-['Literata Variable'] lg:leading-tight"
               >
                 <NavLink id={link}>{link}</NavLink>
               </Box>
             ))}
+
+            <Menu
+              style={{ background: "#5353FB" }}
+              className="text-sm text-white"
+            >
+              <MenuButton
+                style={{
+                  background: "#5353FB",
+                  color: "white",
+                  textShadow: "4px 4px 2px rgba(52,55,67,0.6)",
+                }}
+                fontSize={{ base: "16px", lg: "18px", xl: "20px" }}
+                as={Button}
+                rightIcon={<ChevronDownIcon />}
+                className=" text-white font-['Satoshi']"
+              >
+                Enter the sonic world
+              </MenuButton>
+              <MenuList
+                className="bg-[#5353FB]"
+                style={{ background: "#5353FB" }}
+              >
+                <MenuItem
+                  as="a"
+                  href="#"
+                  style={{ background: "#5353FB" }}
+                  _hover={{
+                    borderBottom: "1px solid white",
+                    color: "gray.200",
+                  }}
+                >
+                  FsonicNFT
+                </MenuItem>
+                <MenuItem
+                  style={{ background: "#5353FB" }}
+                  _hover={{
+                    borderBottom: "1px solid white",
+                    color: "gray.200",
+                  }}
+                >
+                  FsonicArcade <span className="ml-3">(coming soon)</span>
+                </MenuItem>
+                <MenuItem
+                  style={{ background: "#5353FB" }}
+                  _hover={{
+                    borderBottom: "1px solid white",
+                    color: "gray.200",
+                  }}
+                >
+                  Kekbook <span className="ml-3">(coming soon)</span>
+                </MenuItem>
+              </MenuList>
+            </Menu>
           </HStack>
           {/* </HStack> */}
           <Flex alignItems={"center"}>
             <a
-              href="https://app.firebird.finance/swap" target="_blank"
-              className=" text-center text-[#5353FB] hover:text-white hover:bg-[#5353FB] rounded px-2 bg-white text-[18px] md:text-[25px] xl:text-[32px] font-bold font-['Satoshi'] lg:leading-relaxed"
+              href="https://app.firebird.finance/swap"
+              target="_blank"
+              className=" text-center text-[#5353FB] hover:text-white hover:bg-[#5353FB] rounded px-2 bg-white text-[18px] md:text-[20px]  2xl:text-[32px] font-bold font-['Satoshi'] lg:leading-relaxed"
             >
               BUY NOW
             </a>
@@ -108,7 +166,7 @@ export default function NavBar() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: "none" }}>
+          <Box pb={4} display={{ lg: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
                 <Box
@@ -118,6 +176,59 @@ export default function NavBar() {
                   <NavLink id={link}>{link}</NavLink>
                 </Box>
               ))}
+
+              <Menu
+                style={{ background: "#5353FB" }}
+                className="text-sm text-white"
+              >
+                <MenuButton
+                  style={{
+                    background: "#5353FB",
+                    color: "white",
+                    textShadow: "4px 4px 2px rgba(52,55,67,0.6)",
+                  }}
+                  fontSize={{ base: "16px", lg: "18px", xl: "20px" }}
+                  as={Button}
+                  rightIcon={<ChevronDownIcon />}
+                  className=" text-white font-['Satoshi']"
+                >
+                  Enter the sonic world
+                </MenuButton>
+                <MenuList
+                  className="bg-[#5353FB]"
+                  style={{ background: "#5353FB" }}
+                >
+                  <MenuItem
+                    as="a"
+                    href="#"
+                    style={{ background: "#5353FB" }}
+                    _hover={{
+                      borderBottom: "1px solid white",
+                      color: "gray.200",
+                    }}
+                  >
+                    FsonicNFT
+                  </MenuItem>
+                  <MenuItem
+                    style={{ background: "#5353FB" }}
+                    _hover={{
+                      borderBottom: "1px solid white",
+                      color: "gray.200",
+                    }}
+                  >
+                    FsonicArcade <span className="ml-3">(coming soon)</span>
+                  </MenuItem>
+                  <MenuItem
+                    style={{ background: "#5353FB" }}
+                    _hover={{
+                      borderBottom: "1px solid white",
+                      color: "gray.200",
+                    }}
+                  >
+                    Kekbook <span className="ml-3">(coming soon)</span>
+                  </MenuItem>
+                </MenuList>
+              </Menu>
             </Stack>
           </Box>
         ) : null}

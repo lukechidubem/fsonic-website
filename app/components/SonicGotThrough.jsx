@@ -37,7 +37,7 @@ const SonicGotThrough = () => {
               }}
               className=" flex items-end justify-start "
             >
-              <img
+            {/*  <img
                 src="through.png"
                 alt="Image"
                 className=""
@@ -51,6 +51,7 @@ const SonicGotThrough = () => {
                   // marginTop: "30vh",
                 }}
               />
+             */}
             </div>
           </div>
           <div className="lg:w-[17px] lg:h-[17px] w-[30px] h-[10px] rounded-full border-2 border-yellow-300"></div>
