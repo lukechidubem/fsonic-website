@@ -18,6 +18,8 @@ import Logo from "../../public/smallRING.png";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import { Inter } from "next/font/google";
+import FsonicNFTModal from "./FsonicNFTModal";
+import FsonicDefiModal from "./FsonicDefiModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,6 +56,18 @@ const NavLink = (props) => {
 
 export default function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const {
+    isOpen: modalIsOpen,
+    onOpen: modalOnOpen,
+    onClose: modalOnClose,
+  } = useDisclosure();
+
+  const {
+    isOpen: defiModalIsOpen,
+    onOpen: defiModalOnOpen,
+    onClose: defiModalOnClose,
+  } = useDisclosure();
 
   return (
     <>
@@ -122,15 +136,29 @@ export default function NavBar() {
                 style={{ background: "#5353FB" }}
               >
                 <MenuItem
-                  as="a"
-                  href="#"
                   style={{ background: "#5353FB" }}
                   _hover={{
                     borderBottom: "1px solid white",
                     color: "gray.200",
                   }}
+                  onClick={() => {
+                    modalOnOpen();
+                  }}
                 >
                   FsonicNFT
+                </MenuItem>
+
+                <MenuItem
+                  style={{ background: "#5353FB" }}
+                  _hover={{
+                    borderBottom: "1px solid white",
+                    color: "gray.200",
+                  }}
+                  onClick={() => {
+                    defiModalOnOpen();
+                  }}
+                >
+                  FsonicDefi
                 </MenuItem>
                 <MenuItem
                   style={{ background: "#5353FB" }}
@@ -199,16 +227,31 @@ export default function NavBar() {
                   style={{ background: "#5353FB" }}
                 >
                   <MenuItem
-                    as="a"
-                    href="#"
                     style={{ background: "#5353FB" }}
                     _hover={{
                       borderBottom: "1px solid white",
                       color: "gray.200",
                     }}
+                    onClick={() => {
+                      modalOnOpen();
+                    }}
                   >
                     FsonicNFT
                   </MenuItem>
+
+                  <MenuItem
+                    style={{ background: "#5353FB" }}
+                    _hover={{
+                      borderBottom: "1px solid white",
+                      color: "gray.200",
+                    }}
+                    onClick={() => {
+                      defiModalOnOpen();
+                    }}
+                  >
+                    FsonicDefi
+                  </MenuItem>
+
                   <MenuItem
                     style={{ background: "#5353FB" }}
                     _hover={{
@@ -233,6 +276,8 @@ export default function NavBar() {
           </Box>
         ) : null}
       </Box>
+      <FsonicNFTModal isOpen={modalIsOpen} onClose={modalOnClose} />
+      <FsonicDefiModal isOpen={defiModalIsOpen} onClose={defiModalOnClose} />
     </>
   );
 }

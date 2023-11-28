@@ -1,6 +1,7 @@
 import React from "react";
 
 import RingGif from "../../public/Ring.gif";
+import FsonicWorldModal from "./FsonicNFTModal";
 
 const SonicGotThrough = () => {
   return (
@@ -37,7 +38,7 @@ const SonicGotThrough = () => {
               }}
               className=" flex items-end justify-start "
             >
-            {/*  <img
+              {/*  <img
                 src="through.png"
                 alt="Image"
                 className=""
@@ -64,6 +65,7 @@ const SonicGotThrough = () => {
           </div>
         </div>
       </div>
+      {/* <FsonicWorldModal /> */}
     </div>
   );
 };
